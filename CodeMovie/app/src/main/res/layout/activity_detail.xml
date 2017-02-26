@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/padding_normal"
+    android:paddingRight="@dimen/padding_normal"
+    android:weightSum="6"
+    tools:context="com.example.hongnhung.codemovie.activity.DetailActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="vertical">
+
+        <com.google.android.youtube.player.YouTubePlayerView
+            android:id="@+id/player"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_titel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_nomal"
+            android:text="Hard code"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_head" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_normal"
+            android:text="20-22-2012"
+            android:textColor="@android:color/white" />
+
+        <RatingBar
+            android:id="@+id/rb_start"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_nomal"
+            android:numStars="3" />
+
+        <TextView
+            android:id="@+id/tv_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_nomal"
+            android:text="hello"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+</LinearLayout>
